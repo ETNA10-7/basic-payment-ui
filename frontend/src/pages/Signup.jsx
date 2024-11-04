@@ -5,7 +5,7 @@ import { Heading } from "../components/Heading"
 import { InputBox } from "../components/InputBox"
 import { SubHeading } from "../components/SubHeading"
 import axios from "axios";
-import { Navigate } from "react-router-dom"
+import {  useNavigate } from "react-router-dom"
 //import { useNavigate } from "react-router-dom"
 
 export const Signup = () => {
@@ -13,6 +13,7 @@ export const Signup = () => {
     const [lastName, setLastName] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const navigate=useNavigate();
     
 
     return <div className="bg-slate-300 h-screen flex justify-center">

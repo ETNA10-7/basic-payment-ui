@@ -1,5 +1,6 @@
-import { useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import axios from "axios";
+import { Button } from '../components/Button';
 import { useState } from 'react';
 
 export const SendMoney = () => {
@@ -7,6 +8,7 @@ export const SendMoney = () => {
     const id = searchParams.get("id");
     const name = searchParams.get("name");
     const [amount, setAmount] = useState(0);
+    const navigate = useNavigate();
 
     return <div class="flex justify-center h-screen bg-gray-100">
         <div className="h-full flex flex-col justify-center">
@@ -37,7 +39,7 @@ export const SendMoney = () => {
                         }}
                         type="number"
                         class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
-                        id="amount"
+                        
                         placeholder="Enter amount"
                     />
                     </div>
@@ -53,6 +55,11 @@ export const SendMoney = () => {
                     }} class="justify-center rounded-md text-sm font-medium ring-offset-background transition-colors h-10 px-4 py-2 w-full bg-green-500 text-white">
                         Initiate Transfer
                     </button>
+            <Button onClick={() => {
+              localStorage.removeItem("token"); 
+              navigate("/signup"); 
+             }} label={"Logout"}
+                           />
                 </div>
                 </div>
         </div>
