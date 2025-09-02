@@ -9,7 +9,6 @@ The app allows users to securely manage accounts, transfer money, and view trans
 🚀 **Features**
 
 🔐 **User Authentication**: Secure login, signup, and logout using **JWT**.
-
 💸 **Send & Receive Money**: Users can transfer money to other users.
 💰 **Account Balance Management**: View current balance and add funds.
 📊 **Dashboard with Filtering**: Search and filter recipients by name keywords before initiating transfers.
