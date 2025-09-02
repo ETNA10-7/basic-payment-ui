@@ -70,6 +70,3 @@ npm run dev
 * [GitHub](https://github.com/your-username)
 
 
-
-
-Do you want me to also create a **shorter, polished "resume-style" project summary** (1–2 lines) that matches this README, so you can keep both in sync?
