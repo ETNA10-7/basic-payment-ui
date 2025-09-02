@@ -30,8 +30,8 @@ The app allows users to securely manage accounts, transfer money, and view trans
 **⚙️ Installation & Setup**
 
 ### 1. Clone the repository
-git clone https://github.com/your-username/payment-ui-app.git
-cd payment-ui-app
+git clone https://github.com/ETNA10-7/payment-ui-app.git
+cd basic-payment-ui
 
 
 ### 2. Setup Backend
