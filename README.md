@@ -36,15 +36,19 @@ cd basic-payment-ui
 
 ### 2. Setup Backend
 cd backend
+
 npm install
 
 Run the backend:
+
 node index.js (Temporary)
 
 
 ### 3. Setup Frontend
 cd frontend
+
 npm install
+
 npm run dev
 
 ## 📌 API Endpoints
